@@ -24,25 +24,32 @@ const recipeData = [
 
 const PopularRecipes = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          <h2 className="text-3xl font-bold">Most Popular Recipe</h2>
-          <a href="#" className="text-food-purple hover:underline mt-4 md:mt-0">View All</a>
+    <section className="py-5 bg-light-custom">
+      <div className="container">
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">
+          <h2 className="h3 fw-bold mb-3 mb-md-0">Most Popular Recipe</h2>
+          <a href="#" className="text-secondary-custom">View All</a>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="row">
           {recipeData.map((recipe) => (
-            <div key={recipe.id} className="group">
-              <div className="overflow-hidden rounded-lg mb-4">
-                <img 
-                  src={recipe.image} 
-                  alt={recipe.title} 
-                  className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
-                />
+            <div key={recipe.id} className="col-md-4 mb-4">
+              <div className="card border-0 shadow-sm h-100">
+                <div className="overflow-hidden">
+                  <img 
+                    src={recipe.image} 
+                    alt={recipe.title} 
+                    className="card-img-top" 
+                    style={{height: "250px", objectFit: "cover", transition: "transform 0.3s"}}
+                    onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
+                    onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
+                  />
+                </div>
+                <div className="card-body">
+                  <h3 className="h5 fw-semibold mb-2">{recipe.title}</h3>
+                  <p className="text-muted">{recipe.category}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{recipe.title}</h3>
-              <p className="text-gray-600">{recipe.category}</p>
             </div>
           ))}
         </div>

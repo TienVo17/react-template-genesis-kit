@@ -6,11 +6,11 @@ import ContactSection from '@/components/ContactSection';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <main className="flex-1 py-20">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
+      <main className="flex-grow-1 py-5">
+        <div className="container">
+          <h1 className="h2 fw-bold mb-4">Contact Us</h1>
         </div>
         <ContactSection />
       </main>
