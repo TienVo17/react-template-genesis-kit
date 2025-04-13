@@ -4,46 +4,37 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div className="container">
-        <Link to="/" className="navbar-brand d-flex align-items-center">
-          <div className="rounded-circle bg-accent-custom d-flex align-items-center justify-content-center" style={{width: "40px", height: "40px"}}>
-            <span className="fw-bold">F</span>
-          </div>
-          <span className="ms-2 fw-semibold">American Food</span>
-        </Link>
-        
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/menu" className="nav-link">Menu</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">Blog</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/store" className="nav-link">Store</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">Contact</Link>
-            </li>
-          </ul>
+    <nav className="py-4 px-6 md:px-12 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        <div className="h-10 w-10 rounded-full bg-food-yellow flex items-center justify-center text-black font-bold">
+          F
         </div>
+        <span className="font-semibold">American Food</span>
+      </div>
+      
+      <div className="hidden md:flex items-center gap-8">
+        <Link to="/" className="hover:text-food-purple transition-colors">
+          Home
+        </Link>
+        <Link to="/about" className="hover:text-food-purple transition-colors">
+          About
+        </Link>
+        <Link to="/menu" className="hover:text-food-purple transition-colors">
+          Menu
+        </Link>
+        <Link to="/blog" className="hover:text-food-purple transition-colors">
+          Blog
+        </Link>
+        <Link to="/store" className="hover:text-food-purple transition-colors">
+          Store
+        </Link>
+        <Link to="/contact" className="hover:text-food-purple transition-colors">
+          Contact
+        </Link>
+      </div>
+      
+      <div className="block md:hidden">
+        <button className="text-2xl">☰</button>
       </div>
     </nav>
   );
