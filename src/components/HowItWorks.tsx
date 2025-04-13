@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const HowItWorks = () => {
@@ -6,9 +5,9 @@ const HowItWorks = () => {
     <section className="py-16">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">How to Order Books</h2>
+          <h2 className="text-3xl font-bold mb-4">Cách Đặt Sách</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Follow these simple steps to find and order your next favorite book from our collection.
+            Thực hiện theo các bước đơn giản sau để tìm và đặt cuốn sách yêu thích tiếp theo của bạn từ bộ sưu tập của chúng tôi.
           </p>
         </div>
         
@@ -17,9 +16,9 @@ const HowItWorks = () => {
             <div className="w-16 h-16 bg-food-yellow rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               1
             </div>
-            <h3 className="text-xl font-semibold mb-2">Browse</h3>
+            <h3 className="text-xl font-semibold mb-2">Tìm Kiếm</h3>
             <p className="text-gray-600">
-              Explore our vast collection of books across various genres and categories.
+              Khám phá bộ sưu tập sách phong phú của chúng tôi thuộc nhiều thể loại và danh mục khác nhau.
             </p>
           </div>
           
@@ -27,9 +26,9 @@ const HowItWorks = () => {
             <div className="w-16 h-16 bg-food-teal rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               2
             </div>
-            <h3 className="text-xl font-semibold mb-2">Select</h3>
+            <h3 className="text-xl font-semibold mb-2">Chọn Sách</h3>
             <p className="text-gray-600">
-              Add your favorite books to your cart for checkout.
+              Thêm những cuốn sách yêu thích của bạn vào giỏ hàng để thanh toán.
             </p>
           </div>
           
@@ -37,9 +36,9 @@ const HowItWorks = () => {
             <div className="w-16 h-16 bg-food-purple rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               3
             </div>
-            <h3 className="text-xl font-semibold mb-2">Order</h3>
+            <h3 className="text-xl font-semibold mb-2">Đặt Hàng</h3>
             <p className="text-gray-600">
-              Complete your purchase by providing shipping and payment details.
+              Hoàn tất việc mua hàng bằng cách cung cấp thông tin giao hàng và thanh toán.
             </p>
           </div>
           
@@ -47,9 +46,9 @@ const HowItWorks = () => {
             <div className="w-16 h-16 bg-food-pink rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               4
             </div>
-            <h3 className="text-xl font-semibold mb-2">Enjoy</h3>
+            <h3 className="text-xl font-semibold mb-2">Thưởng Thức</h3>
             <p className="text-gray-600">
-              Receive your books and dive into the world of knowledge and imagination.
+              Nhận sách của bạn và đắm mình vào thế giới tri thức và trí tưởng tượng.
             </p>
           </div>
         </div>

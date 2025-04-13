@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,52 +9,52 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+            <h2 className="text-3xl font-bold mb-6">Liên Hệ Với Chúng Tôi</h2>
             <form className="space-y-6">
               <div>
-                <Input placeholder="Your Name" className="w-full p-3 border rounded-md" />
+                <Input placeholder="Tên của bạn" className="w-full p-3 border rounded-md" />
               </div>
               <div>
-                <Input placeholder="Your Email" type="email" className="w-full p-3 border rounded-md" />
+                <Input placeholder="Email của bạn" type="email" className="w-full p-3 border rounded-md" />
               </div>
               <div>
-                <Input placeholder="Subject" className="w-full p-3 border rounded-md" />
+                <Input placeholder="Tiêu đề" className="w-full p-3 border rounded-md" />
               </div>
               <div>
                 <Textarea 
-                  placeholder="Message" 
+                  placeholder="Nội dung tin nhắn" 
                   rows={4} 
                   className="w-full p-3 border rounded-md"
                 />
               </div>
-              <Button className="bg-food-teal hover:bg-food-teal/90 text-black px-8 py-2 rounded-md">
-                Send Message
+              <Button className="bg-food-teal hover:bg-food-teal/90 text-black px-8 py-2 rounded-md font-semibold">
+                Gửi Tin Nhắn
               </Button>
             </form>
           </div>
           
           <div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4">Visit Our Bookstore</h3>
-              <div className="space-y-4">
+            <div className="bg-white p-8 rounded-lg shadow-md h-full">
+              <h3 className="text-xl font-bold mb-4">Ghé Thăm Hiệu Sách</h3>
+              <div className="space-y-4 text-gray-700">
                 <p className="flex items-start">
-                  <span className="mr-3">📍</span>
-                  <span>123 Book Street, Literary Town, BK 12345</span>
+                  <span className="mr-3 mt-1">📍</span>
+                  <span>123 Đường Sách, Thị Trấn Văn Học, BK 12345</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="mr-3">📞</span>
+                  <span className="mr-3 mt-1">📞</span>
                   <span>+1 (555) 123-4567</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="mr-3">✉️</span>
-                  <span>contact@bookhaven.com</span>
+                  <span className="mr-3 mt-1">✉️</span>
+                  <span>lienhe@bookhaven.com</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="mr-3">🕒</span>
+                  <span className="mr-3 mt-1">🕒</span>
                   <span>
-                    Monday - Friday: 9:00 AM - 8:00 PM<br />
-                    Saturday: 10:00 AM - 6:00 PM<br />
-                    Sunday: 12:00 PM - 5:00 PM
+                    Thứ Hai - Thứ Sáu: 9:00 - 20:00<br />
+                    Thứ Bảy: 10:00 - 18:00<br />
+                    Chủ Nhật: 12:00 - 17:00
                   </span>
                 </p>
               </div>
