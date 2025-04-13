@@ -34,11 +34,30 @@ const ContactSection = () => {
             </form>
           </div>
           
-          <div className="h-80 md:h-auto">
-            <div className="w-full h-full rounded-lg overflow-hidden">
-              {/* Placeholder for a map - in a real app, you'd use Google Maps or another map API */}
-              <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                <p className="text-gray-600">Map goes here</p>
+          <div>
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold mb-4">Visit Our Bookstore</h3>
+              <div className="space-y-4">
+                <p className="flex items-start">
+                  <span className="mr-3">📍</span>
+                  <span>123 Book Street, Literary Town, BK 12345</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="mr-3">📞</span>
+                  <span>+1 (555) 123-4567</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="mr-3">✉️</span>
+                  <span>contact@bookhaven.com</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="mr-3">🕒</span>
+                  <span>
+                    Monday - Friday: 9:00 AM - 8:00 PM<br />
+                    Saturday: 10:00 AM - 6:00 PM<br />
+                    Sunday: 12:00 PM - 5:00 PM
+                  </span>
+                </p>
               </div>
             </div>
           </div>

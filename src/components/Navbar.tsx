@@ -7,9 +7,9 @@ const Navbar = () => {
     <nav className="py-4 px-6 md:px-12 flex items-center justify-between">
       <div className="flex items-center gap-2">
         <div className="h-10 w-10 rounded-full bg-food-yellow flex items-center justify-center text-black font-bold">
-          F
+          B
         </div>
-        <span className="font-semibold">American Food</span>
+        <span className="font-semibold">Book Haven</span>
       </div>
       
       <div className="hidden md:flex items-center gap-8">
@@ -20,10 +20,10 @@ const Navbar = () => {
           About
         </Link>
         <Link to="/menu" className="hover:text-food-purple transition-colors">
-          Menu
+          Categories
         </Link>
         <Link to="/blog" className="hover:text-food-purple transition-colors">
-          Blog
+          Books
         </Link>
         <Link to="/store" className="hover:text-food-purple transition-colors">
           Store

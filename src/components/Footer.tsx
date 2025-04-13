@@ -8,20 +8,20 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Company</h3>
-            <p className="mb-4">123 Main Street</p>
-            <p className="mb-4">New York, NY 10001</p>
+            <h3 className="text-xl font-bold mb-4">Book Haven</h3>
+            <p className="mb-4">123 Book Street</p>
+            <p className="mb-4">Literary Town, BK 12345</p>
             <p className="mb-4">United States</p>
-            <p className="mb-4">info@americanfood.com</p>
+            <p className="mb-4">info@bookhaven.com</p>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Sitemap</h3>
+            <h3 className="text-xl font-bold mb-4">Explore</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="hover:underline">Home</Link></li>
               <li><Link to="/about" className="hover:underline">About</Link></li>
-              <li><Link to="/menu" className="hover:underline">Menu</Link></li>
-              <li><Link to="/blog" className="hover:underline">Blog</Link></li>
+              <li><Link to="/menu" className="hover:underline">Categories</Link></li>
+              <li><Link to="/blog" className="hover:underline">Books</Link></li>
               <li><Link to="/store" className="hover:underline">Store</Link></li>
               <li><Link to="/contact" className="hover:underline">Contact</Link></li>
             </ul>
@@ -31,8 +31,8 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Support</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:underline">FAQs</a></li>
-              <li><a href="#" className="hover:underline">Support Center</a></li>
-              <li><a href="#" className="hover:underline">Delivery Info</a></li>
+              <li><a href="#" className="hover:underline">Shipping Policy</a></li>
+              <li><a href="#" className="hover:underline">Returns & Refunds</a></li>
               <li><a href="#" className="hover:underline">Privacy Policy</a></li>
               <li><a href="#" className="hover:underline">Terms of Service</a></li>
             </ul>
@@ -41,12 +41,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center text-food-teal font-bold">
-                F
+                B
               </div>
-              <span className="font-semibold text-white">American Food</span>
+              <span className="font-semibold text-white">Book Haven</span>
             </div>
             
-            <p className="mb-6">Subscribe to our newsletter to get updates on our latest offers!</p>
+            <p className="mb-6">Subscribe to our newsletter to get updates on new releases and special offers!</p>
             
             <div className="flex gap-4 mb-8">
               <a href="#" className="text-white hover:text-gray-200">
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-10 pt-6 text-center">
-          <p>&copy; {new Date().getFullYear()} American Food. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Book Haven. All rights reserved.</p>
         </div>
       </div>
     </footer>

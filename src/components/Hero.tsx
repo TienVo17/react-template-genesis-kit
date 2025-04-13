@@ -12,22 +12,22 @@ const Hero = () => {
       <div className="container mx-auto px-6 pt-10 md:pt-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="max-w-xl">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            Popular belief simply random text roots in a piece of classical
+            Discover a World of Knowledge Through Books
           </h1>
           <p className="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua.
+            Explore our vast collection of books across various genres. From fiction to non-fiction, 
+            academic to leisure reading, we have something for every book lover.
           </p>
           <Button className="bg-food-teal hover:bg-food-teal/90 text-black font-medium px-8 py-2 rounded-md">
-            Get Started
+            Browse Books
           </Button>
         </div>
         
         <div className="flex justify-center relative">
           <img 
-            src="/lovable-uploads/cf4fff63-112c-4216-9f5f-91a3bbec42c8.png" 
-            alt="Food display"
-            className="max-w-full hidden md:block"
+            src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            alt="Book display"
+            className="max-w-full hidden md:block rounded-lg shadow-lg"
           />
           <div className="absolute -right-6 top-1/4 squiggly-line"></div>
           <div className="absolute -left-6 bottom-1/4 squiggly-line"></div>
