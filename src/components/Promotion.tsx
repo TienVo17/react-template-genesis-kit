@@ -4,32 +4,51 @@ import { Button } from "@/components/ui/button";
 
 const Promotion = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-food-purple text-white">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          <div className="md:w-1/3">
-            <div className="relative">
-              <div className="w-64 h-64 rounded-full overflow-hidden border-8 border-food-teal/30">
-                <img 
-                  src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                  alt="Special deal" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -top-4 -right-4 squiggly-line"></div>
-            </div>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Join Our Book Club</h2>
+            <p className="mb-6">
+              Become a member of our Book Club and enjoy exclusive benefits:
+            </p>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <svg className="mr-2 w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>10% discount on all purchases</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="mr-2 w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Early access to new releases</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="mr-2 w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Monthly book recommendations</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="mr-2 w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Invitation to author meet-and-greets</span>
+              </li>
+            </ul>
+            <Button className="bg-white text-food-purple hover:bg-gray-100">
+              Join Now
+            </Button>
           </div>
           
-          <div className="md:w-2/3 max-w-lg">
-            <h2 className="text-3xl font-bold mb-4">Order Now!</h2>
-            <h3 className="text-2xl font-semibold text-food-purple mb-6">and Get 50% Off</h3>
-            <p className="text-gray-600 mb-8">
-              Take advantage of our limited-time offer and enjoy 50% off on your first order. 
-              Experience the taste of premium American cuisine at an unbeatable price.
-            </p>
-            <Button className="bg-food-purple hover:bg-food-purple/90 text-white px-8 py-2 rounded-md">
-              Shop Now
-            </Button>
+          <div className="flex justify-center">
+            <img 
+              src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              alt="Reading club"
+              className="rounded-lg shadow-lg max-w-md"
+            />
           </div>
         </div>
       </div>

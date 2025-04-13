@@ -1,54 +1,56 @@
 
 import React from 'react';
-import { ShoppingBag, Utensils, Truck } from 'lucide-react';
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+          <h2 className="text-3xl font-bold mb-4">How to Order Books</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Professional food prep made simple for busy people who want to enjoy healthy, 
-            delicious meals without the hassle.
+            Follow these simple steps to find and order your next favorite book from our collection.
           </p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
-          <div className="flex flex-col items-center max-w-xs text-center">
-            <div className="w-20 h-20 rounded-full bg-food-purple flex items-center justify-center text-white mb-6">
-              <Utensils size={32} />
+        <div className="grid md:grid-cols-4 gap-10">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-food-yellow rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              1
             </div>
-            <h3 className="font-medium text-xl mb-2">Choose Your Meal</h3>
-            <p className="text-gray-600">Browse our menu and select your favorite dishes.</p>
+            <h3 className="text-xl font-semibold mb-2">Browse</h3>
+            <p className="text-gray-600">
+              Explore our vast collection of books across various genres and categories.
+            </p>
           </div>
           
-          <div className="hidden md:block text-food-teal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          
-          <div className="flex flex-col items-center max-w-xs text-center">
-            <div className="w-20 h-20 rounded-full bg-food-teal flex items-center justify-center text-white mb-6">
-              <ShoppingBag size={32} />
+          <div className="text-center">
+            <div className="w-16 h-16 bg-food-teal rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              2
             </div>
-            <h3 className="font-medium text-xl mb-2">Place Your Order</h3>
-            <p className="text-gray-600">Customize your order and choose delivery time.</p>
+            <h3 className="text-xl font-semibold mb-2">Select</h3>
+            <p className="text-gray-600">
+              Add your favorite books to your cart for checkout.
+            </p>
           </div>
           
-          <div className="hidden md:block text-food-teal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          
-          <div className="flex flex-col items-center max-w-xs text-center">
-            <div className="w-20 h-20 rounded-full bg-food-pink flex items-center justify-center text-white mb-6">
-              <Truck size={32} />
+          <div className="text-center">
+            <div className="w-16 h-16 bg-food-purple rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              3
             </div>
-            <h3 className="font-medium text-xl mb-2">Enjoy Your Food</h3>
-            <p className="text-gray-600">We deliver fresh, ready-to-eat meals right to your door.</p>
+            <h3 className="text-xl font-semibold mb-2">Order</h3>
+            <p className="text-gray-600">
+              Complete your purchase by providing shipping and payment details.
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-16 h-16 bg-food-pink rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              4
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Enjoy</h3>
+            <p className="text-gray-600">
+              Receive your books and dive into the world of knowledge and imagination.
+            </p>
           </div>
         </div>
       </div>
