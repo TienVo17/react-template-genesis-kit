@@ -32,7 +32,7 @@ const BookList = () => {
               <CardDescription className="text-sm text-gray-600 mb-2">Tác giả: {book.author}</CardDescription>
               <div className="flex justify-between items-center mt-2">
                 <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{book.category}</span>
-                <span className="font-bold text-food-purple text-base">{book.price}</span>
+                <span className="font-bold text-food-purple text-base">{(typeof book.price === 'number' ? book.price : parseFloat(book.price.replace(/[^\d.-]/g, ''))).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
               </div>
             </CardContent>
             <CardFooter className="border-t p-3 mt-auto">

@@ -15,7 +15,7 @@ export const bookData: Book[] = [
     author: "Sarah Johnson",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
     category: "Self-Help",
-    price: "$24.99",
+    price: "$14900213",
     description: "Khám phá niềm vui và sức mạnh của việc đọc sách với hướng dẫn sâu sắc này. Tìm hiểu các kỹ thuật để nâng cao khả năng hiểu, tốc độ và tư duy phản biện của bạn.",
   },
   {
